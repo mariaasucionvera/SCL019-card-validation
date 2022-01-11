@@ -1,0 +1,72 @@
+
+body {
+    background-color: #ffb242;
+    font-family: lato, 'helvetica-light';
+    position: relative;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+#boton {
+    background-color: rgba(240, 153, 23, 0.911);
+    color: #f7f3ee;
+    bottom: -55px;
+    right: 0;
+    width: 150px;
+    border-radius: 8px;
+    height: 42px;
+    font-size: 14px;
+    font-family: lato, 'helvetica-light', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+input {
+    
+    border: none;
+    outline: none;
+    background-color: #f5f6f8;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 15px;
+    color: rgb(155, 149, 149);
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: lato, 'helvetica-light', 'sans-serif';
+    letter-spacing: .7px;
+}
+
+label {
+    display: block;
+    margin: 0 auto 7px;
+}
+
+.center {
+    text-align: center
+}
+ 
+  
+.formulario-tarjeta {
+
+
+    
+    border-radius: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0 auto;
+    background-color: rgba(226, 211, 142, 0.938);
+    width: 100%;
+    max-width: 200px;
+    padding:  20px 70px 50px 20px;
+}
+
+    

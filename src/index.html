@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>VALIDAR TARJETA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--TITULO-->
+  <h1 class="center">VALIDADOR DE TARJETA DE CRÉDITO</h1>
+
+  <!--imagenTarjeta-->
+  <div style="text-align: center;">
+    <img src="tarjeta.png">
+  </div>
+
+  <!--FORMULARIO TARJETA-->
+  <form id="formulario-tarjeta" class="formulario-tarjeta">
+
+    <!--Número Tarjeta-->
+    <div class="cuadrosTextos">
+      <label>Número tarjeta</label>
+      <input type="text" id="inputNumero" maxlength="16">
+    </div>
+
+    <!--Nombre-->
+    <div class="cuadrosTextos">
+      <label>Nombre</label>
+      <input type="text" id="inputNombre">
+    </div>
+
+    <!--fecha expiración-->
+    <div class="dateCard">
+      <label>Expiración</label>
+
+        <select name="month" id="selectmonth">
+          <option disabled selected>Mes</option>
+        </select>
+
+        <select name="year" id="selectyear">
+          <option disabled selected>Año</option>
+        </select>
+    </div>
+
+    <!--ccv-->
+    <div class="cuadrosTextos">
+      <label>CCV</label>
+      <input type="text" id="inputCCV" maxlength="3">
+    </div>
+
+    <!--BOTÓN-->
+    <input type="button" class="btn-enviar" value="verificar" id="boton">
+  
+  <!--TERMINA FORMULARIO TARJETA-->
+  
+  </div>
+  <header></header>
+  <main></main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
