@@ -9,21 +9,22 @@ console.log(validator);
 //INPUT EN ARRAY
 let numeroDelInput= document.getElementById("inputNumero");
 let numeroArray= [];//numeroDelInput.value.split("");
-console.log(numeroArray);
+//console.log(numeroArray);
 
 //let numeroDelInputSlice = numeroDelInput.slice();
 
 
 //FUNCIÓN PARA OCULTAR NUMEROS DE LA TARJETA
 
-let numeroEnmascarado= document.getElementById ("inputNumero");
-numeroEnmascarado.addEventListener("keyup",enmascarar);
+const numeroEnmascarado = document.getElementById ("botonEnmascarar");
+numeroEnmascarado.addEventListener("click", enmascarar,false);
+//numeroEnmascarado.addEventListener("keyup",enmascarar);
 
 
 function enmascarar() {      //función para ocultar los primeros digitos de la tarjeta
 
   let numeroVisible = numeroDelInput.value.split("");
-  console.log(numeroVisible);
+  //console.log(numeroVisible);
   let hideNum = [];
   
   for (let i = 0; i < numeroVisible.length; i++) {
@@ -37,7 +38,7 @@ function enmascarar() {      //función para ocultar los primeros digitos de la 
   }
   //console.log(hideNum.join(""));
 
-  numeroEnmascarado.value = hideNum.join(""); //muestra el numero enmascarado en el input
+  numeroDelInput.value = hideNum.join(""); //muestra el numero enmascarado en el input
 
   return hideNum.join("");//termina la función
 }

@@ -11,7 +11,7 @@ h1{
 
 }
 
-#boton {
+#boton, #botonEnmascarar {
     background-color: rgba(240, 153, 23, 0.911);
     color: #f7f3ee;
     bottom: -55px;
@@ -28,6 +28,7 @@ h1{
     border: none;
     cursor: pointer;
 }
+
 
 
 input {
