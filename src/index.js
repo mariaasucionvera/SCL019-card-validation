@@ -76,8 +76,24 @@ function numberValidation() {
   }
 }
 
+//SELECT MES
+for(let i = 1; i <=12; i++){
+  let opcion = document.createElement('option');
+  opcion.value = 1;
+  opcion.innerText = i;
+  selectMes.appendChild(opcion);
 
+}
 
+//SELECT AÑO
+const yearActual = new Date().getFullYear();
+for(let i= yearActual; i <= yearActual + 8; i++){
+  let opcion = document.createElement('option');
+  opcion.value = 1;
+  opcion.innerText = i;
+  selectyear.appendChild(opcion);
+
+}
 
 /*console.log("holis");*/
 /*function validarNumero() {
